@@ -1,12 +1,15 @@
-import React from 'react'
-interface BlockProps{
+import React from 'react';
+
+interface BlockProps {
     value?: string | null;
-    onClick?: (value: string) => void
+    onClick?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
 }
 
-const Block: React.FC<BlockProps>=(props)=>{
+const Block: React.FC<BlockProps> = (props) => {
     return (
-        <div onClick={props.onClick} className="block" >{props.value}</div>
+        <div onClick={props.onClick} className="block">
+            {props.value}
+        </div>
     );
 }
 
