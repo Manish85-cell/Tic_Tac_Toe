@@ -1,0 +1,25 @@
+.block{
+    border:2px solid;
+    height: 100px;
+    width: 100px;
+    cursor:pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    font-size: 55px;
+    font-weight: bold;
+}
+.board{
+    margin:auto 30% auto 30%;
+   justify-content: center;
+}
+.Row{
+    display:flex;
+ 
+}
+#root{
+    width:100%;
+}
+
